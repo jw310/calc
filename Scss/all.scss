@@ -1,0 +1,73 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+  height: 100vh;  //螢幕可視範圍高度的百分比
+  color: white;
+  background: #E8E8E8;
+}
+
+.wrap {      // 外容器
+  display: flex;         // 宣告使用
+	align-items: center;      // 置軸線中心對齊 |
+	justify-content: center; //水平置中對齊
+  height: 100%;
+}
+
+.calculator {
+  border-radius: 20px 20px 20px 20px;    // 四周圓角
+  background-color: #062145;
+  width: 350px;
+	height: 525px;
+}
+
+.display {
+  width: 350px;
+	height: 109px;
+  padding: 16px;
+  .calc {
+    color: #00C4FF;
+    text-align: right;  // 文字靠右對齊
+    font-size: 16px;
+  }
+  .answer {
+    color: #FFFFFF;
+    text-align: right;
+    font-size: 56px;
+    line-height: 56px;
+  }
+}
+
+.buttons { 
+  //height: 67px;
+  background-color: #06214F;
+  border-radius: 20px;
+  font-size: 24px;
+  text-align: center;
+	cursor: pointer;  // 滑鼠樣式
+  display: grid;   // 網格系統宣告
+  grid-template-columns: 1fr 1fr 1fr 1fr; // 將網格系統的行做四等份
+  padding: 5px;
+  grid-column-gap: 16px; // 網格左右間距
+  grid-row-gap: 60px;  // 網格上下左右間距
+  :hover {         // 滑鼠移動到上面的效果
+    box-shadow: 0px 0px 1px 1px #ccc;
+  }
+  .op {
+    background-color: #041936;
+    border-radius: 16px;
+  }
+  .equal {
+    border-radius: 20px;
+    grid-column-start: 3; 
+	  grid-column-end: 5;
+	  text-align: right;
+	  display: flex;
+	  align-items: center;
+	  justify-content: flex-end;
+    padding: 0 40px;
+    background: linear-gradient(to right,#00C4FF,#6C00FF); // 由左向右漸變效果
+  }
+
+}

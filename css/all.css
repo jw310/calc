@@ -1,0 +1,95 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  color: white;
+  background: #E8E8E8;
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.calculator {
+  border-radius: 20px 20px 20px 20px;
+  background-color: #062145;
+  width: 350px;
+  height: 525px;
+}
+
+.display {
+  width: 350px;
+  height: 109px;
+  padding: 16px;
+}
+
+.display .calc {
+  color: #00C4FF;
+  text-align: right;
+  font-size: 16px;
+}
+
+.display .answer {
+  color: #FFFFFF;
+  text-align: right;
+  font-size: 56px;
+  line-height: 56px;
+}
+
+.buttons {
+  background-color: #06214F;
+  border-radius: 20px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 5px;
+  grid-column-gap: 16px;
+  grid-row-gap: 60px;
+}
+
+.buttons :hover {
+  -webkit-box-shadow: 0px 0px 1px 1px #ccc;
+          box-shadow: 0px 0px 1px 1px #ccc;
+}
+
+.buttons .op {
+  background-color: #041936;
+  border-radius: 16px;
+}
+
+.buttons .equal {
+  border-radius: 20px;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0 40px;
+  background: -webkit-gradient(linear, left top, right top, from(#00C4FF), to(#6C00FF));
+  background: linear-gradient(to right, #00C4FF, #6C00FF);
+}
+/*# sourceMappingURL=all.css.map */
